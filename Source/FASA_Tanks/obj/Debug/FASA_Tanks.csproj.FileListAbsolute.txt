@@ -1,0 +1,5 @@
+D:\KSP\Mod_Repos\FASA_Tanks\FASA_Tanks\bin\Debug\FASA_Tanks.dll
+D:\KSP\Mod_Repos\FASA_Tanks\FASA_Tanks\bin\Debug\FASA_Tanks.pdb
+D:\KSP\Mod_Repos\FASA_Tanks\FASA_Tanks\obj\Debug\FASA_Tanks.csprojResolveAssemblyReference.cache
+D:\KSP\Mod_Repos\FASA_Tanks\FASA_Tanks\obj\Debug\FASA_Tanks.dll
+D:\KSP\Mod_Repos\FASA_Tanks\FASA_Tanks\obj\Debug\FASA_Tanks.pdb
