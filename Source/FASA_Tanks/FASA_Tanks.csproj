@@ -32,16 +32,16 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\Modding\DLLs\Assembly-CSharp.dll</HintPath>
+      <HintPath>bin\Debug\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\Modding\DLLs\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>bin\Debug\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="KSPAPIExtensions">
-      <HintPath>..\..\..\Modding\DLLs\KSPAPIExtensions.dll</HintPath>
+      <HintPath>bin\Debug\KSPAPIExtensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\Modding\DLLs\UnityEngine.dll</HintPath>
+      <HintPath>bin\Debug\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

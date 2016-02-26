@@ -25,12 +25,32 @@ namespace FASA_Tanks
 	public class semiTank : PartModule //, IPartCostModifier, IPartMassModifier
 	{
 		//So this should let us set a scale in the GUI, defaults to 1. Don't need to load any config data yet.
-		[KSPField(isPersistant = false, guiActiveEditor = true, guiName = "Length", guiFormat = "0.000", guiUnits = "m")]
-		[UI_ScaleEdit(scene = UI_Scene.Editor)]
+		[KSPField(isPersistant = false, guiActiveEditor = true, guiName = "Length", guiFormat = "0.000", guiUnits = "m"),
+		 UI_FloatEdit(scene = UI_Scene.Editor, minValue = 1.0f, incrementLarge = 2.0f, incrementSmall = 0.5f, incrementSlide = 0.001f)]
 		public float tankLength = 1.0f;
 
+		public override void OnLoad(ConfigNode node)
+		{
+			base.OnLoad(node);
+			//Setup();
+		}
+		
+		public override void OnSave(ConfigNode node)
+		{
+			//version = GetType().Assembly.GetName().Version.ToString();
+			base.OnSave(node);
+		}
 
+		public void scaleTank()
+		{
+			part.transform.GetChild(0).localScale = new Vector3(1f, tankLength, 1f);
+			Debug.Log ("Setting Scale to: " + tankLength);
+		}
 
+		public override void OnUpdate()
+		{
+			scaleTank();
+		}
 
 	}
 }
